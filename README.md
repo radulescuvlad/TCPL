@@ -34,7 +34,7 @@ main {
 ## 3. Primitive Data Types
 
 | Keyword  | Description                                 |
-|----------|---------------------------------------------|
+|----------|:--------------------------------------------|
 | `byte`   | 8 bit whole number                          |
 | `short`  | 16 bit whole number                         |
 | `int`    | 32 bit whole number                         |
