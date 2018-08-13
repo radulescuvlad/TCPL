@@ -3,10 +3,8 @@
 ## 1. The Hello World Program
 
 ```
-from system.io using System, Console
-
 main {
-    Console console = System.getRef.makeConsole;
+    var console: Console, System.getRef.makeConsole;
     console.display;
     console.printLine("Hello, World!");
 }
@@ -16,10 +14,8 @@ main {
 ## 2. Constants and Variables
 
 ```
-from system.io using System, Console
-
 main {
-    Console console = System.getRef.makeConsole;
+    var console: Console, System.getRef.makeConsole;
     console.display;
     var a: int, 1;
     val b: int, 2;
@@ -31,7 +27,15 @@ main {
 }
 ```
 ---
-## 3. Primitive Data Types
+## 3. Hardcoding
+
+For any constant or variable you can specify its initial value after you
+have specified its type:
+```
+var IDENTIFIER: TYPE, INITIAL_VALUE;
+```
+---
+## 4. Primitive Data Types
 
 | Keyword  | Description                                 |
 |----------|:--------------------------------------------|
@@ -50,5 +54,27 @@ numbers are signed by default, and floating point numbers are always
 unsigned. The `char` data type is neither signed nor unsigned, because
 it's not treated as a number by the standard.
 
-## 4. Composite Data Types
+## 5. Composite Data Types
 
+TCPL provides object-oriented facilities, which makes it possible to define
+a whole slew of data types containing the primitive types. The way to do
+this is via classes:
+
+```
+class ExampleClass {
+private:
+    var a: int;
+    var b: float;
+public:
+    def __init__(a: int, b: float) {
+        self.a = a;
+        self.b = b;
+    }
+    def __fin__ {
+        var console: Console, System.getRef.makeConsole;
+        console.display;
+        console.printLine(
+                "Object of type ExampleClass has been destroyed.");
+    }
+}
+```
