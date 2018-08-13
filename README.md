@@ -44,11 +44,11 @@ main {
 | `bool`   | 1 bit value, may contain only true or false |
 | `char`   | character                                   |
 
-*Note: Whole numbers may have the **unsigned** modifier attached to them.
+**Note:** Whole numbers may have the `unsigned` modifier attached to them.
 This determines wheteher the numbers may hold negative values. Whole
 numbers are signed by default, and floating point numbers are always
-unsigned. The **char** data type is neither signed nor unsigned, because
-it's not treated as a number by the standard.*
+unsigned. The `char` data type is neither signed nor unsigned, because
+it's not treated as a number by the standard.
 
 ## 4. Composite Data Types
 
